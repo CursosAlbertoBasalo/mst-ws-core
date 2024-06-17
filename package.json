@@ -7,6 +7,7 @@
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "prepublish": "cd ./projects/mst-core && npm run release ",
     "publish": "npm run build && cd ./dist/mst-core && npm link",
     "postpublish": "git push --follow-tags origin main"
   },
